@@ -1,4 +1,88 @@
 {
+  "accountSettings": {
+    "security": {
+      "passkeys": {
+        "loadError": "Failed to load passkeys",
+        "added": "Passkey added",
+        "addError": "Failed to add passkey",
+        "deleted": "Passkey deleted",
+        "deleteError": "Failed to delete passkey",
+        "title": "Passkeys",
+        "namePlaceholder": "Passkey name",
+        "addButton": "Add Passkey",
+        "empty": "No passkeys added.",
+        "lastUsed": "Last used {{date}}",
+        "addedOn": "Added {{date}}",
+        "deleteAriaLabel": "Delete {{name}}"
+      },
+      "mfa": {
+        "enabled": "MFA enabled",
+        "enableError": "Failed to enable MFA",
+        "disabled": "MFA disabled",
+        "disableError": "Failed to disable MFA",
+        "setupError": "Failed to set up MFA",
+        "qrCodeAlt": "MFA QR code",
+        "otpauthUrl": "otpauth URL",
+        "authCode": "Authentication Code",
+        "disableButton": "Disable MFA",
+        "enableButton": "Enable MFA",
+        "setupButton": "Set Up MFA"
+      },
+      "confirmPassword": {
+        "title": "Confirm password",
+        "description": "Enter your current password to continue."
+      }
+    },
+    "profile": {
+      "saved": "Account updated",
+      "error": "Failed to update account",
+      "nickname": "Nickname",
+      "saveButton": "Save Profile"
+    },
+    "password": {
+      "mismatch": "New passwords do not match",
+      "changed": "Password changed",
+      "error": "Failed to change password",
+      "currentPassword": "Current Password",
+      "newPassword": "New Password",
+      "confirmNewPassword": "Confirm New Password",
+      "changeButton": "Change Password"
+    },
+    "title": "Account Settings",
+    "tabs": {
+      "profile": "Profile",
+      "password": "Password",
+      "security": "Security"
+    }
+  },
+  "userMenu": {
+    "title": "User menu",
+    "colorTheme": "Color Theme",
+    "font": "Font",
+    "system": "System",
+    "displayScale": "Display Scale",
+    "decreaseScale": "Decrease display scale",
+    "increaseScale": "Increase display scale",
+    "scalePercent": "Display scale percent",
+    "logout": "Log out",
+    "provider": "Via {{provider}}",
+    "passwordProvider": "Password",
+    "roles": "Role: {{roles}}",
+    "allReady": "All ready",
+    "notReady": "{{count}} Not Ready",
+    "mfa": "MFA",
+    "themes": {
+      "default": "Default",
+      "eye-care": "Eye Care",
+      "darkmatter": "Dark Matter",
+      "notebook": "Notebook",
+      "clean-slate": "Clean Slate",
+      "claude": "Claude"
+    }
+  },
+  "brand": {
+    "tagline": "Unified Cluster Operations Platform"
+  },
   "common": {
     "actions": {
       "add": "Add",
@@ -379,7 +463,7 @@
     "unsetGlobal": "Unset global sidebar",
     "unsetGlobalSuccess": "Global sidebar disabled successfully",
     "unsetGlobalError": "Failed to disable global sidebar",
-    "updateAvailable": "A newer Kite version is available"
+    "updateAvailable": "A newer HexaOS Ops version is available"
   },
   "nav": {
     "overview": "Overview",
@@ -539,7 +623,7 @@
     },
     "tabs": {
       "rolloutRevisions": "Rollout Revisions",
-      "kiteAudit": "Kite Audit"
+      "kiteAudit": "HexaOS Ops Audit"
     }
   },
   "daemonsets": {
@@ -685,7 +769,7 @@
     "tryAgainHint": "You can try logging in with a different account that has the required permissions.",
     "noLoginMethods": "No login methods configured",
     "configureAuth": "Please configure authentication providers in your environment",
-    "footer": "© {{year}} Kite. All rights reserved.",
+    "footer": "© {{year}} HexaOS Ops. All rights reserved.",
     "documentation": "Documentation",
     "errors": {
       "accessDenied": "Access Denied",
@@ -906,7 +990,7 @@
   },
   "settingsHint": {
     "title": "Complete Your Setup",
-    "description": "Configure essential settings to get the most out of Kite",
+    "description": "Configure essential settings to get the most out of HexaOS Ops",
     "p8s": {
       "description": "Configure Prometheus"
     },
@@ -968,7 +1052,7 @@
     "errors": {
       "loadFailed": "Failed to load clusters"
     },
-    "deleteConfirmation": "This action will only remove the current cluster's configuration in kite and will not delete any cluster resources.",
+    "deleteConfirmation": "This action will only remove the current cluster's configuration in HexaOS Ops and will not delete any cluster resources.",
     "dialog": {
       "createTitle": "Add Cluster",
       "editTitle": "Edit Cluster",
@@ -1027,7 +1111,7 @@
   },
   "initialization": {
     "title": "Initial Setup",
-    "welcome": "Welcome to Kite",
+    "welcome": "Welcome to HexaOS Ops",
     "subtitle": "Set up your account.\nConnect your first cluster.",
     "description": "Configure your admin user and connect cluster",
     "stepCounter": "Step {{current}} of {{total}}",
@@ -1038,7 +1122,7 @@
       "title": "Create admin account",
       "description": "Set up your administrator",
       "heading": "Create your admin account",
-      "headingDescription": "This account will have full access to your Kite console.",
+      "headingDescription": "This account will have full access to your HexaOS Ops console.",
       "username": "Username",
       "usernameRequired": "Username *",
       "usernamePlaceholder": "Enter admin username",
@@ -1064,7 +1148,7 @@
       "title": "Connect cluster",
       "description": "Import your Kubernetes cluster",
       "heading": "Connect your first cluster",
-      "headingDescription": "Import a kubeconfig or use the cluster where Kite is running.",
+      "headingDescription": "Import a kubeconfig or use the cluster where HexaOS Ops is running.",
       "kubeconfig": "Kubeconfig File",
       "kubeconfigRequired": "Kubeconfig File *",
       "kubeconfigPlaceholder": "Paste your kubeconfig file content here...",
@@ -1256,7 +1340,7 @@
       "plainHTTPHint": "Use HTTP instead of HTTPS for this OCI registry. Credentials and chart data are sent without encryption.",
       "repositoryAdded": "Repository added",
       "repositoryDeleted": "Repository deleted",
-      "deleteRepositoryDescription": "This only removes the managed chart source from Kite. It does not delete remote charts or installed Helm releases.",
+      "deleteRepositoryDescription": "This only removes the managed chart source from HexaOS Ops. It does not delete remote charts or installed Helm releases.",
       "noCharts": "No charts found",
       "noReadme": "No README found",
       "noValues": "No values found",
@@ -1264,7 +1348,7 @@
       "noVersions": "No versions found",
       "noChartUrl": "Chart package URL is missing.",
       "invalidValues": "Values must be a YAML object.",
-      "artifactHubTrafficNotice": "Security notice: Kite contacts <artifactHub>Artifact Hub</artifactHub> when searching or viewing chart information from this source. Kite only displays third-party data and is not responsible for its content.",
+      "artifactHubTrafficNotice": "Security notice: HexaOS Ops contacts <artifactHub>Artifact Hub</artifactHub> when searching or viewing chart information from this source. HexaOS Ops only displays third-party data and is not responsible for its content.",
       "installed": "Helm release installed"
     },
     "placeholders": {
@@ -1390,7 +1474,7 @@
     "uninstall": "Uninstall",
     "saved": "Plugin configuration updated",
     "adminOnly": "Only administrators can manage plugins.",
-    "trust": "Plugins run in your browser with your Kite access. Only install packages from authors you trust.",
+    "trust": "Plugins run in your browser with your HexaOS Ops access. Only install packages from authors you trust.",
     "unavailable": "This plugin is not installed or is disabled.",
     "notFound": "This plugin page does not exist.",
     "loadFailed": "Plugin failed to load",

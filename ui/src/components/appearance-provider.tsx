@@ -29,7 +29,7 @@ export function AppearanceProvider({
   themeStorageKey = 'vite-ui-theme',
   defaultColorTheme = 'default',
   colorThemeStorageKey = 'vite-ui-color-theme',
-  defaultFont = 'maple',
+  defaultFont = 'system',
   fontStorageKey = 'vite-ui-font',
   defaultDisplayScale = 95,
   displayScaleStorageKey = 'vite-ui-display-scale',

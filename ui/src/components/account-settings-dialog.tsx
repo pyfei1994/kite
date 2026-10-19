@@ -460,7 +460,7 @@ export function AccountSettingsDialog({
                   <div className="flex items-center justify-between gap-3">
                     <div className="flex items-center gap-2 text-sm font-medium">
                       <ShieldCheck className="h-4 w-4" />
-                      <span>MFA</span>
+                      <span>{t('userMenu.mfa')}</span>
                     </div>
                     <Badge variant={user.mfa_enabled ? 'default' : 'secondary'}>
                       {user.mfa_enabled

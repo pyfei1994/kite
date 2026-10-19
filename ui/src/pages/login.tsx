@@ -1,5 +1,4 @@
 import { FormEvent, useEffect, useState } from 'react'
-import Logo from '@/assets/icon.svg'
 import { useAuth } from '@/contexts/auth-context'
 import { IconEye, IconEyeOff, IconLock, IconUser } from '@tabler/icons-react'
 import { useTranslation } from 'react-i18next'
@@ -24,6 +23,7 @@ import {
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import { Brand } from '@/components/brand'
 import { Footer } from '@/components/footer'
 import { LanguageToggle } from '@/components/language-toggle'
 
@@ -255,11 +255,9 @@ export function LoginPage() {
       <div className="flex-1 flex items-center justify-center">
         <div className="w-full max-w-md">
           <div className="text-center mb-8">
-            <div className="flex items-center justify-center space-x-2 mb-4">
-              <img src={Logo} className="h-10 w-10 dark:invert" />{' '}
-              <h1 className="text-2xl font-bold">Kite</h1>
+            <div className="flex justify-center">
+              <Brand />
             </div>
-            <p className="text-gray-600">{t('login.kubernetesDashboard')}</p>
           </div>
 
           <Card>

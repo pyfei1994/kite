@@ -718,7 +718,7 @@ export function ClusterManagement() {
         resourceType="cluster"
         additionalNote={t(
           'clusterManagement.deleteConfirmation',
-          "This action will only remove the current cluster's configuration in kite and will not delete any cluster resources."
+          "This action will only remove the current cluster's configuration in HexaOS Ops and will not delete any cluster resources."
         )}
       />
     </div>

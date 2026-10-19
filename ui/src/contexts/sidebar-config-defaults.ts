@@ -71,7 +71,7 @@ defaultMenus['sidebar.groups.application'].push({
   icon: getResourceIconComponent('IconPackage'),
 })
 
-export const SIDEBAR_CONFIG_VERSION = 5
+export const SIDEBAR_CONFIG_VERSION = 7
 
 function getIconName(iconComponent: ComponentType<{ className?: string }>) {
   const entry = Object.entries(sidebarIconMap).find(
@@ -147,7 +147,9 @@ export function migrateSidebarConfig(
         .filter(
           (item) =>
             'url' in item &&
-            (item.url === '/gateways' || item.url === '/httproutes')
+            (item.url === '/gateways' ||
+              item.url === '/httproutes' ||
+              item.url === '/storage-readiness')
         )
         .map((item) => item.id)
     )
